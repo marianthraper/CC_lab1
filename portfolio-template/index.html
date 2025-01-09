@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!--/ /---- Put your name in the title of the page ----/ /-->
+	<title>MARIA GEORGE ANTHRAPER</title>
+	
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<!-- Add a link to google fonts here if you want them -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
+	<meta description="Cloud Computing Lab 1">
+
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	
+    <!-- ------------------------------------------------------
+    The site is designed to be mobile first. The wrapper elements
+	are in place for when you get to desktop size to contain the 
+	content.
+    ------------------------------------------------------- -->
+    
+	<header class="primary">
+        <div class="wrapper">
+            
+			<div class="logo-container">
+				<h1>Maria's<br>Portfolio</h1>
+
+				<!-- ------------------------------------------------------
+				Note that the image of the logo is linked to the home page.
+				------------------------------------------------------- -->
+				<a href="index.html"><img src="data:image/png;base64,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" alt="logo image" id="logo"></a>
+			</div>
+            
+            
+			<!-- ------------------------------------------------------
+            The navigation here is linking to the sections further down
+            the page.
+            ------------------------------------------------------- -->
+			<nav id="mainnav">
+            	<ul>
+                	<li><a href="#work">Work</a></li>
+                    <li><a href="#about-contact">About</a></li>
+                    <li><a href="#about-contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    
+    <!-- ------------------------------------------------------
+    This is the work section, which has two parts: the featured
+	section and the projects section.
+    ------------------------------------------------------- -->
+    
+    <section id="work">
+   		<div class="wrapper">
+        	<h2>Check Out My Best Projects</h2>
+        	<section class="featured">
+                <article>
+                	<!-- ------------------------------------------------------
+                    Link the image below to the detail page for this project.
+                    Use the page.html file to make that page. Also link the 
+                    anchor tag in the paragraph below to the same page.
+                    ------------------------------------------------------- -->
+                	<a href="#"><img src="https://protoinfrastack-myfirstbucketb8884501-fnnzvxt2ee5v.s3.amazonaws.com/3ZHNCDbRQA7UJEjonutM5ZT13HgsKfx18YHp.png" alt="image"></a>
+                </article>
+                
+                <article>
+                	<h3>Cloud Computing Lab 1</h3>
+                    <h4>Challenge Statement</h4>
+                    <p>Before they sold out single-origin coffee fingerstache sartorial freegan master cleanse. Sartorial blog fap, shoreditch scenester tacos poutine. Bespoke brunch viral listicle, keffiyeh celiac paleo organic scenester next level cliche put a bird on it cardigan. Forage kombucha pitchfork literally. Art party narwhal food truck selfies, XOXO leggings distillery four loko fap. An additional sentence.</p> <p><a href="#">Find out how I solved this problem</a></p> 
+                </article>
+            </section> <!-- end row -->
+            
+            
+            <!-- ------------------------------------------------------
+            The projects section is for additional projects. I put four in
+			here, but it could be more, or less. You just have to pay
+			attention to how they wrap, and how many you want per row.
+            
+            Note that each image should be linked to the page with more
+            detailed information about that project. You can use a copy of
+            page.html to create those pages.
+            ------------------------------------------------------- -->
+            
+            <section class="projects">
+            
+            	<article>
+                	<h3>Emostream</h3>
+                	<a href="#"><img src="https://hkjwpqdbzngbbvolpmsu.supabase.co/storage/v1/object/public/CClab1/cat.jpeg" alt="image"></a>
+                    <p><strong>Role:</strong> Designer</p>
+                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
+                </article>
+                
+                <article>
+                	<h3>Movie Booking</h3>
+                	<a href="#"><img src="https://hkjwpqdbzngbbvolpmsu.supabase.co/storage/v1/object/public/CClab1/cat.jpeg" alt="image"></a>
+                    <p><strong>Role:</strong> Designer</p>
+                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
+                </article>
+                
+                <article>
+                	<h3>Movie Recommendation</h3>
+                	<a href="#"><img src="https://hkjwpqdbzngbbvolpmsu.supabase.co/storage/v1/object/public/CClab1/cat.jpeg" alt="image"></a>
+                    <p><strong>Role:</strong> Designer</p>
+                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
+                </article>
+				
+				<article>
+                	<h3>Speech to Speech Translation</h3>
+                	<a href="#"><img src="https://hkjwpqdbzngbbvolpmsu.supabase.co/storage/v1/object/public/CClab1/cat.jpeg" alt="image"></a>
+                    <p><strong>Role:</strong> Designer</p>
+                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
+                </article>
+            
+            </section><!-- end row -->
+            
+        </div> <!-- end work wrapper -->
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    This is the about and contact section. The links in the main
+    navigation link to this section. 
+    ------------------------------------------------------- -->
+    
+    <section id="about-contact" class="secondary">
+   		<div class="wrapper">
+        	
+			<div class="profile-photo">
+            	<img src="https://cdn.openart.ai/published/Sz4k0e7P8C8lGrAkKA4j/NqPTzbNR_xd7Y_1024.webp" alt="image">
+            </div>
+			
+            <article>
+				<h2>About Me</h2>
+				<p>Fixie owner fender owner, reclaimed wood collector and javascripter. Acting at the junction of minimalism and intellectual purity to create great work for living breathing human beings. I'm a designer and this is my work.</p>
+				<h3>Skills</h3>
+				<p>I am particularly good at BLAH BLAH and really enjoy BLAH. I am currently learning BLAH and I'm very exited about BLAH BLAH.</p>
+			</article> 
+                
+			<article>
+				<h2>Contact Me!</h2>
+				<p>I am currently looking for opportunities to work on a team at a design shop. Please feel free to contact me by phone, email or through the usual social media channels.</p>
+
+				<!-- ------------------------------------------------------
+				Be sure to encode your email address at this site, so you 
+				don't get spam. http://wbwip.com/wbw/emailencoder.html
+				------------------------------------------------------- -->
+
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;">&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;</a><br>
+				<i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</p>
+
+				<!-- ------------------------------------------------------
+				You can see here that I have included font-awesome. It is used
+				to create the icons above and below. You can go to the font-awesome
+				website to see the available icons and swap some out.
+				------------------------------------------------------- -->
+
+				<p class="social">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a> 
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+				</p>
+			</article>
+                   
+        </div>
+    </section>
+    
+    
+    <!-- ------------------------------------------------------
+    The footer section is not doing much on this page. Add more
+    content if necessary.
+    ------------------------------------------------------- -->
+    <footer class="primary">
+    	<div class="wrapper">
+        	<p class="centered">&copy; 2025 all rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
